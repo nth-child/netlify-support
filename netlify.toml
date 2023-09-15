@@ -1,3 +1,11 @@
 [build] 
     functions = "./functions"
     publish = "public"
+[[headers]]
+    for = "/*"
+    [headers.values]
+        Access-Control-Allow-Methods: "POST, OPTIONS"
+        Access-Control-Allow-Origin: "*"
+        Access-Control-Allow-Headers: "Authorization, Content-Type, Accept, Origin, X-Requested-With"
+        Access-Control-Max-Age: "2592000"
+        Access-Control-Allow-Credentials: "true"
